@@ -19,7 +19,19 @@ export default function Contact() {
           {CONTACT.map((c) => (
             <Reveal key={c.label}>
               <dt>{c.label}</dt>
-              <dd>{c.href ? <a href={c.href}>{c.value}</a> : c.value}</dd>
+              <dd>
+                {c.href ? (
+                  <a
+                    href={c.href}
+                    target={c.href.startsWith("http") ? "_blank" : undefined}
+                    rel={c.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  >
+                    {c.value}
+                  </a>
+                ) : (
+                  c.value
+                )}
+              </dd>
             </Reveal>
           ))}
         </dl>

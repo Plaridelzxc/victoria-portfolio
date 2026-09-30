@@ -161,8 +161,10 @@ export const TOOLKIT = [
   { title: "Also", body: "Print production, social media content, photo editing, branding, administrative support, client coordination", wide: true },
 ];
 
+export const GMAIL_COMPOSE_URL = "https://mail.google.com/mail/?view=cm&fs=1&to=victoriasumilhig1@gmail.com";
+
 export const CONTACT = [
-  { label: "Email", value: "victoriasumilhig1@gmail.com", href: "mailto:victoriasumilhig1@gmail.com" },
+  { label: "Email", value: "victoriasumilhig1@gmail.com", href: GMAIL_COMPOSE_URL },
   { label: "Phone", value: "0961 906 1430", href: "tel:+639619061430" },
   { label: "Based in", value: "Bacolod City, Philippines" },
 ];
@@ -172,5 +174,5 @@ export const RESUME_URL = "/ba51c0edf4c81c8c9577257c790f77d7.pdf";
 export const SOCIALS = [
   { label: "LinkedIn", value: "Connect on LinkedIn", href: "https://www.linkedin.com/in/victoria-sumilhig-79b3ba3b7/", icon: "linkedin" },
   { label: "Portfolio", value: "Canva Site", href: "https://victoriasumilhigportfolio.my.canva.site/", icon: "portfolio" },
-  { label: "Gmail", value: "victoriasumilhig1@gmail.com", href: "mailto:victoriasumilhig1@gmail.com", icon: "mail" },
+  { label: "Gmail", value: "victoriasumilhig1@gmail.com", href: GMAIL_COMPOSE_URL, icon: "mail" },
 ];

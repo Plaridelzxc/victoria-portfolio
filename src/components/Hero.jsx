@@ -1,6 +1,6 @@
 import Reveal from "./Reveal.jsx";
 import { IconDownload } from "./Icons.jsx";
-import { RESUME_URL } from "../data/content.js";
+import { RESUME_URL, GMAIL_COMPOSE_URL } from "../data/content.js";
 
 export default function Hero() {
   return (
@@ -20,7 +20,7 @@ export default function Hero() {
           </Reveal>
           <Reveal className="hero__actions" dir="left" delay={4}>
             <a className="btn" href="#work">See the work</a>
-            <a className="btn btn--ghost" href="mailto:victoriasumilhig1@gmail.com">Get in touch</a>
+            <a className="btn btn--ghost" href={GMAIL_COMPOSE_URL} target="_blank" rel="noopener noreferrer">Get in touch</a>
             <a className="btn btn--ghost" href={RESUME_URL} download rel="noopener">
               <IconDownload className="btn__icon" /> Resume
             </a>
